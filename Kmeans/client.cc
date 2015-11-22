@@ -128,6 +128,7 @@ void CrearGrafo( Grafo &grafo){
 }
 
 void init_centros(vector<centro> &centros,int K,int numero_nodos){
+	int temporal=0;
 	for (int t=0 ; t < K ; t++){
 		vector<float> vaux;
 		for (int i = 0; i < numero_nodos; i++){
@@ -147,7 +148,6 @@ int main(int argc,char *argv[]){
 	CrearGrafo(grafo);
 	string  temp=argv[1];
 	int K=stoi( temp );
-	int temporal;
 	int block=0;
 	int i=0;
 	int counter=0;
